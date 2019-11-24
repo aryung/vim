@@ -4,12 +4,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
-Bundle 'VundleVim/Vundle.vim'
-Bundle 'bling/vim-airline'
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'prettier/vim-prettier'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'prettier/vim-prettier'
 " Bundle 'Chiel92/vim-autoformat'
 " Bundle 'jiangmiao/auto-pairs'
 " Bundle 'sheerun/vim-polyglot'
