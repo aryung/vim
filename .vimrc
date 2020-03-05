@@ -64,9 +64,16 @@ let g:javascript_plugin_jsdoc = 1
 " set relativenumber
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
+" move line up/down
+nnoremap <S-J> :m .+1<CR>==
+nnoremap <S-K> :m .-2<CR>==
+inoremap <S-J> <Esc>:m .+1<CR>==gi
+inoremap <S-K> <Esc>:m .-2<CR>==gi
+vnoremap <S-J> :m '>+1<CR>gv=gv
+vnoremap <S-k> :m '<-2<CR>gv=gv
 " prettier
-let g:prettier#config#bracket_spacing = 'true'
-let g:prettier#config#jsx_bracket_same_line = 'false'
-
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+"let g:prettier#config#bracket_spacing = 'true'
+"let g:prettier#config#jsx_bracket_same_line = 'false'
+"
+"let g:prettier#autoformat = 0
+"autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
