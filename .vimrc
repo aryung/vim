@@ -65,12 +65,12 @@ let g:javascript_plugin_jsdoc = 1
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " move line up/down
-nnoremap <S-J> :m .+1<CR>==
-nnoremap <S-K> :m .-2<CR>==
-inoremap <S-J> <Esc>:m .+1<CR>==gi
-inoremap <S-K> <Esc>:m .-2<CR>==gi
-vnoremap <S-J> :m '>+1<CR>gv=gv
-vnoremap <S-k> :m '<-2<CR>gv=gv
+nnoremap <C-J> :m .+1<CR>==
+nnoremap <C-K> :m .-2<CR>==
+inoremap <C-J> <Esc>:m .+1<CR>==gi
+inoremap <C-K> <Esc>:m .-2<CR>==gi
+vnoremap <C-J> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
 " prettier
 "let g:prettier#config#bracket_spacing = 'true'
 "let g:prettier#config#jsx_bracket_same_line = 'false'
