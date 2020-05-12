@@ -15,6 +15,7 @@ Plugin 'prettier/vim-prettier'
 " Bundle 'sheerun/vim-polyglot'
 call vundle#end()
 
+syntax on
 colorscheme desert
 set encoding=utf-8
 set nu
@@ -40,7 +41,6 @@ set ignorecase smartcase
 set smartcase
 set title
 "set syntax=javascript
-syntax enable
 nnoremap <silent> <cr> :nohlsearch<cr>
 " map ,, <C-^>
 " set iskeyword+=-
@@ -53,15 +53,15 @@ set listchars=tab:>~,trail:_,extends:>,precedes:<
 set list
 map <Leader>n :NERDTreeToggle<CR>
 
-" eslint check
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_always_populate_loc_list = 1
-" vim-autoformat
-let g:formatdef_eslint = '"SRC=eslint-temp-${RANDOM}.js; cat - >$SRC; eslint --fix $SRC >/dev/null 2>&1; cat $SRC | perl -pe \"chomp if eof\"; rm -f $SRC"'
-let g:formatters_javascript = ['eslint']
-let g:javascript_plugin_jsdoc = 1
-" map <Leader>t :!mix test<CR>
-" set relativenumber
+"" eslint check
+"let g:syntastic_javascript_checkers = ['eslint']
+"let g:syntastic_always_populate_loc_list = 1
+"" vim-autoformat
+"let g:formatdef_eslint = '"SRC=eslint-temp-${RANDOM}.js; cat - >$SRC; eslint --fix $SRC >/dev/null 2>&1; cat $SRC | perl -pe \"chomp if eof\"; rm -f $SRC"'
+"let g:formatters_javascript = ['eslint']
+"let g:javascript_plugin_jsdoc = 1
+"" map <Leader>t :!mix test<CR>
+"" set relativenumber
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " move line up/down
