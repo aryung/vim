@@ -16,7 +16,8 @@ Plugin 'prettier/vim-prettier'
 call vundle#end()
 
 syntax on
-colorscheme sonokai
+" colorscheme sonokai
+colorscheme contrastneed
 set encoding=utf-8
 set nu
 set ai
