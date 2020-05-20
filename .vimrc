@@ -15,9 +15,11 @@ Plugin 'prettier/vim-prettier'
 " Bundle 'sheerun/vim-polyglot'
 call vundle#end()
 
+" theme
+
 syntax on
-" colorscheme sonokai
-colorscheme contrastneed
+colorscheme sonokai
+" colorscheme contrastneed
 set encoding=utf-8
 set nu
 set ai
