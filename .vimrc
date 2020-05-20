@@ -18,8 +18,8 @@ call vundle#end()
 " theme
 
 syntax on
-colorscheme molokai
-" colorscheme contrastneed
+" colorscheme molokai
+colorscheme desert
 set encoding=utf-8
 set nu
 set ai
@@ -57,15 +57,6 @@ set listchars=tab:..,trail:_,extends:>,precedes:<
 set list
 map <Leader>n :NERDTreeToggle<CR>
 
-"" eslint check
-"let g:syntastic_javascript_checkers = ['eslint']
-"let g:syntastic_always_populate_loc_list = 1
-"" vim-autoformat
-"let g:formatdef_eslint = '"SRC=eslint-temp-${RANDOM}.js; cat - >$SRC; eslint --fix $SRC >/dev/null 2>&1; cat $SRC | perl -pe \"chomp if eof\"; rm -f $SRC"'
-"let g:formatters_javascript = ['eslint']
-"let g:javascript_plugin_jsdoc = 1
-"" map <Leader>t :!mix test<CR>
-"" set relativenumber
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " move line up/down
@@ -75,9 +66,3 @@ inoremap <C-J> <Esc>:m .+1<CR>==gi
 inoremap <C-K> <Esc>:m .-2<CR>==gi
 vnoremap <C-J> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
-" prettier
-"let g:prettier#config#bracket_spacing = 'true'
-"let g:prettier#config#jsx_bracket_same_line = 'false'
-"
-"let g:prettier#autoformat = 0
-"autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
