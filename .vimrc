@@ -18,7 +18,7 @@ call vundle#end()
 " theme
 
 syntax on
-colorscheme sonokai
+colorscheme molokai
 " colorscheme contrastneed
 set encoding=utf-8
 set nu
@@ -52,7 +52,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <silent> <BS> <C-w>h
-set listchars=tab:>~,trail:_,extends:>,precedes:<
+"set listchars=tab:>~,trail:_,extends:>,precedes:<
+set listchars=tab:..,trail:_,extends:>,precedes:<
 set list
 map <Leader>n :NERDTreeToggle<CR>
 
