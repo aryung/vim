@@ -19,7 +19,7 @@ call vundle#end()
 
 syntax on
 " colorscheme molokai
-colorscheme desert
+colorscheme sonokai
 set encoding=utf-8
 set nu
 set ai
