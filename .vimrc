@@ -1,5 +1,8 @@
+set nocompatible              " be iMproved, required
+filetype plugin indent on
+
 set t_Co=256
-filetype indent on
+" filetype indent on
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -10,7 +13,9 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'prettier/vim-prettier'
-" Plugin 'pangloss/vim-javascript'
+Plugin 'fatih/vim-go'
+Plugin 'pangloss/vim-javascript'
+Plugin 'MaxMEllon/vim-jsx-pretty'
 " Bundle 'Chiel92/vim-autoformat'
 " Bundle 'jiangmiao/auto-pairs'
 " Bundle 'sheerun/vim-polyglot'
@@ -19,9 +24,9 @@ call vundle#end()
 " theme
 
 syntax on
-" colorscheme molokai
+colorscheme molokai
 " colorscheme sonokai
-colorscheme desert
+" colorscheme desert
 set encoding=utf-8
 set nu
 set ai
@@ -68,3 +73,13 @@ inoremap <C-J> <Esc>:m .+1<CR>==gi
 inoremap <C-K> <Esc>:m .-2<CR>==gi
 vnoremap <C-J> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
+
+" jsx
+" let g:jsx_ext_required=0
+
+" go
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
