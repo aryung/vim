@@ -10,6 +10,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'prettier/vim-prettier'
+" Plugin 'pangloss/vim-javascript'
 " Bundle 'Chiel92/vim-autoformat'
 " Bundle 'jiangmiao/auto-pairs'
 " Bundle 'sheerun/vim-polyglot'
@@ -19,7 +20,8 @@ call vundle#end()
 
 syntax on
 " colorscheme molokai
-colorscheme sonokai
+" colorscheme sonokai
+colorscheme desert
 set encoding=utf-8
 set nu
 set ai
