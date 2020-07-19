@@ -13,12 +13,10 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'prettier/vim-prettier'
-Plugin 'fatih/vim-go'
+Plugin 'fatih/vim-go' { 'do': ':GoUpdateBinaries' }
 Plugin 'pangloss/vim-javascript'
 Plugin 'MaxMEllon/vim-jsx-pretty'
-" Bundle 'Chiel92/vim-autoformat'
-" Bundle 'jiangmiao/auto-pairs'
-" Bundle 'sheerun/vim-polyglot'
+Bundle 'jiangmiao/auto-pairs'
 call vundle#end()
 
 " theme
