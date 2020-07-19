@@ -13,7 +13,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'prettier/vim-prettier'
-Plugin 'fatih/vim-go' { 'do': ':GoUpdateBinaries' }
+Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plugin 'pangloss/vim-javascript'
 Plugin 'MaxMEllon/vim-jsx-pretty'
 Bundle 'jiangmiao/auto-pairs'
