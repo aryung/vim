@@ -16,7 +16,7 @@ Plugin 'prettier/vim-prettier'
 Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plugin 'pangloss/vim-javascript'
 Plugin 'MaxMEllon/vim-jsx-pretty'
-Bundle 'jiangmiao/auto-pairs'
+Plugin 'jiangmiao/auto-pairs'
 call vundle#end()
 
 " theme
