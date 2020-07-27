@@ -22,9 +22,9 @@ call vundle#end()
 " theme
 
 syntax on
-colorscheme molokai
+" colorscheme molokai
 " colorscheme sonokai
-" colorscheme desert
+colorscheme desert
 set encoding=utf-8
 set nu
 set ai
