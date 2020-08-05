@@ -17,6 +17,7 @@ Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plugin 'pangloss/vim-javascript'
 Plugin 'MaxMEllon/vim-jsx-pretty'
 Plugin 'jiangmiao/auto-pairs'
+" Plugin 'airblade/vim-rooter'
 call vundle#end()
 
 " theme
@@ -57,7 +58,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 nnoremap <silent> <BS> <C-w>h
-"set listchars=tab:>~,trail:_,extends:>,precedes:<
+" set listchars=tab:>~,trail:_,extends:>,precedes:<
 set listchars=tab:..,trail:_,extends:>,precedes:<
 set list
 map <Leader>n :NERDTreeToggle<CR>
@@ -81,3 +82,4 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+let g:go_fmt_command = "goimports"
