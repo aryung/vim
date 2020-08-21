@@ -17,6 +17,7 @@ Plugin 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plugin 'pangloss/vim-javascript'
 Plugin 'MaxMEllon/vim-jsx-pretty'
 Plugin 'jiangmiao/auto-pairs'
+" Plugin 'metakirby5/codi.vim'
 call vundle#end()
 
 " theme
@@ -82,3 +83,7 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+
+" codi
+" nmap <leader>js :Codi javascript<CR>
+" nmap <leader>njs :Codi!<CR>
