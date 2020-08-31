@@ -18,6 +18,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'MaxMEllon/vim-jsx-pretty'
 Plugin 'jiangmiao/auto-pairs'
 " Plugin 'metakirby5/codi.vim'
+" Plugin 'luochen1990/rainbow'
 call vundle#end()
 
 " theme
@@ -87,3 +88,10 @@ let g:go_highlight_build_constraints = 1
 " codi
 " nmap <leader>js :Codi javascript<CR>
 " nmap <leader>njs :Codi!<CR>
+
+" rainbow
+" let g:rainbow_active = 1
+
+
+" yaml
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
